@@ -7,23 +7,238 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <!-- Personal Information Title -->
     <TextView
+        android:id="@+id/tv_personal_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Personal Information"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.095" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- User Information -->
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="Name"
+        android:padding="@dimen/padding_small"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_personal_info" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="Age"
+        android:inputType="number"
+        android:padding="@dimen/padding_small"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="Weight (kg or lbs)"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/padding_small"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_age" />
+
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="Height (cm or inches)"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/padding_small"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_weight" />
+
+    <!-- Imperial/Metric Toggle and Text Labels -->
+    <TextView
+        android:id="@+id/tv_imperial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="@dimen/padding_small"
+        android:text="Imperial"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_height" />
+
+    <Switch
+        android:id="@+id/switch_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:layout_constraintEnd_toStartOf="@id/tv_metric"
+        app:layout_constraintStart_toEndOf="@id/tv_imperial"
+        app:layout_constraintTop_toBottomOf="@id/et_height" />
+
+    <TextView
+        android:id="@+id/tv_metric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="@dimen/padding_small"
+        android:text="Metric"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_height" />
+
+    <!-- Submit and Cancel Buttons -->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="@color/button_color"
+        android:padding="@dimen/padding_small"
+        android:text="Submit"
+        android:textColor="@color/button_text_color"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch_toggle" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="@color/button_color"
+        android:padding="@dimen/padding_small"
+        android:text="Cancel"
+        android:textColor="@color/button_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_submit"
+        app:layout_constraintTop_toBottomOf="@id/switch_toggle" />
+
+    <!-- Exercise Intensity Section -->
+
+    <!-- Exercise Intensity Radio Buttons -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:padding="@dimen/padding_small"
+        android:text="Exercise Intensity:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_submit" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintTop_toBottomOf="@id/btn_submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Light"
+            android:padding="@dimen/padding_small" />
+
+        <RadioButton
+            android:id="@+id/rb_moderate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Moderate"
+            android:padding="@dimen/padding_small" />
+
+        <RadioButton
+            android:id="@+id/rb_vigorous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vigorous"
+            android:padding="@dimen/padding_small" />
+    </RadioGroup>
+
+    <!-- Exercise Time Input -->
+
+    <!-- Total Calories TextView -->
+
+    <TextView
+        android:id="@+id/tv_exercise_time_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="128dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:padding="@dimen/padding_small"
+        android:text="Time:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_group" />
+
+    <EditText
+        android:id="@+id/et_exercise_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:hint="Exercise Time in minutes"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:padding="@dimen/padding_small"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/tv_exercise_time_label"
+        app:layout_constraintTop_toBottomOf="@id/radio_group" />
+
+    <TextView
+        android:id="@+id/tv_total_calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="@dimen/padding_small"
+        android:text="Total Calories:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_exercise_time" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
