@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Mid-term3025</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="weight">Weight (kg or lbs)</string>
+    <string name="height">Height (cm or inches)</string>
+    <string name="imperial">Imperial</string>
+    <string name="metric">Metric</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="exercise_intensity">Exercise Intensity:</string>
+    <string name="light">Light</string>
+    <string name="moderate">Moderate</string>
+    <string name="vigorous">Vigorous</string>
+    <string name="time">Time:</string>
+    <string name="exercise_time_hint">Exercise Time in minutes</string>
+    <string name="total_calories">Total Calories:</string>
 </resources>
