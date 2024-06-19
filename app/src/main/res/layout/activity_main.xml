@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="Personal Information"
+        android:text="@string/personal_information"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:minHeight="48dp"
         android:layout_marginTop="16dp"
-        android:hint="Name"
+        android:hint="@string/name"
         android:padding="@dimen/padding_small"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:minHeight="48dp"
         android:layout_marginTop="16dp"
-        android:hint="Age"
+        android:hint="@string/age"
         android:inputType="number"
         android:padding="@dimen/padding_small"
         android:textSize="16sp"
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:minHeight="48dp"
         android:layout_marginTop="16dp"
-        android:hint="Weight (kg or lbs)"
+        android:hint="@string/weight"
         android:inputType="numberDecimal"
         android:padding="@dimen/padding_small"
         android:textSize="16sp"
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:minHeight="48dp"
         android:layout_marginTop="16dp"
-        android:hint="Height (cm or inches)"
+        android:hint="@string/height"
         android:inputType="numberDecimal"
         android:padding="@dimen/padding_small"
         android:textSize="16sp"
@@ -85,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:padding="@dimen/padding_small"
-        android:text="Imperial"
+        android:text="@string/imperial"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_height" />
@@ -109,7 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:padding="@dimen/padding_small"
-        android:text="Metric"
+        android:text="@string/metric"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_height" />
@@ -123,7 +123,7 @@
         android:layout_marginTop="16dp"
         android:background="@color/button_color"
         android:padding="@dimen/padding_small"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textColor="@color/button_text_color"
         app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
         app:layout_constraintStart_toStartOf="parent"
@@ -137,7 +137,7 @@
         android:layout_marginTop="16dp"
         android:background="@color/button_color"
         android:padding="@dimen/padding_small"
-        android:text="Cancel"
+        android:text="@string/cancel"
         android:textColor="@color/button_text_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_submit"
@@ -152,7 +152,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:padding="@dimen/padding_small"
-        android:text="Exercise Intensity:"
+        android:text="@string/exercise_intensity"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -175,7 +175,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Light"
+            android:text="@string/light"
             android:padding="@dimen/padding_small" />
 
         <RadioButton
@@ -183,7 +183,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Moderate"
+            android:text="@string/moderate"
             android:padding="@dimen/padding_small" />
 
         <RadioButton
@@ -191,7 +191,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Vigorous"
+            android:text="@string/vigorous"
             android:padding="@dimen/padding_small" />
     </RadioGroup>
 
@@ -206,7 +206,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="92dp"
         android:padding="@dimen/padding_small"
-        android:text="Time:"
+        android:text="@string/time"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/radio_group" />
@@ -216,7 +216,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
-        android:hint="Exercise Time in minutes"
+        android:hint="@string/exercise_time_hint"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
         android:padding="@dimen/padding_small"
@@ -232,7 +232,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:padding="@dimen/padding_small"
-        android:text="Total Calories:"
+        android:text="@string/total_calories"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
