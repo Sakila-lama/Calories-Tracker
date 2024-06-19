@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">Mid-term3025</string>
     <string name="personal_information">Personal Information</string>
     <string name="name">Name</string>
     <string name="age">Age</string>
@@ -14,5 +15,5 @@
     <string name="vigorous">Vigorous</string>
     <string name="time">Time:</string>
     <string name="exercise_time_hint">Exercise Time in minutes</string>
-    <string name="total_calories">Total Calories:</string>
+    <string name="total_calories">Total Calories:.2f</string>
 </resources>
